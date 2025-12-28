@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navneet AutoMobiles | Luxury Automotive Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Premium Color Palette */
+        :root {
+            --premium-black: #0A0A0A;
+            --luxury-gold: #C6A961;
+            --cream-white: #F5F3EF;
+            --charcoal-gray: #2D2D2D;
+            --light-gold: #E8D9B4;
+            --dark-charcoal: #1A1A1A;
+            --pure-white: #FFFFFF;
+            --gold-gradient: linear-gradient(135deg, #C6A961 0%, #E8D9B4 50%, #B89B4F 100%);
+            --section-bg: #F9F7F2;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: var(--premium-black);
+            background-color: var(--pure-white);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Premium Header */
+        .premium-header {
+            background-color: var(--premium-black);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(198, 169, 97, 0.2);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo-circle {
+            width: 70px;
+            height: 70px;
+            background: var(--gold-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--luxury-gold);
+            box-shadow: 0 0 25px rgba(198, 169, 97, 0.3);
+        }
+        
+        .logo-circle i {
+            font-size: 32px;
+            color: var(--premium-black);
+        }
+        
+        .brand-text h1 {
+            font-family: 'Prata', serif;
+            font-size: 32px;
+            font-weight: 400;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 1.5px;
+            line-height: 1.2;
+        }
+        
+        .brand-text .hindi-title {
+            font-size: 18px;
+            color: var(--cream-white);
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            margin-top: 5px;
+        }
+        
+        .premium-tag {
+            background: var(--gold-gradient);
+            color: var(--premium-black);
+            padding: 8px 22px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 5px 15px rgba(198, 169, 97, 0.2);
+        }
+        
+        /* Premium Hero Section */
+        .premium-hero {
+            background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(26, 26, 26, 0.95)), url('https://images.unsplash.com/photo-1593941707882-a5bba5338fe2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 120px;
+            color: var(--pure-white);
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 60px;
+            background: rgba(26, 26, 26, 0.7);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 1px solid rgba(198, 169, 97, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--gold-gradient);
+        }
+        
+        .hero-tag {
+            background: rgba(198, 169, 97, 0.1);
+            color: var(--luxury-gold);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-bottom: 25px;
+            border: 1px solid rgba(198, 169, 97, 0.3);
+        }
+        
+        .hero-title {
+            font-family: 'Prata', serif;
+            font-size: 58px;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: var(--pure-white);
+        }
+        
+        .hero-title span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .hero-description {
+            font-size: 20px;
+            color: var(--cream-white);
+            margin-bottom: 35px;
+            font-weight: 300;
+            max-width: 600px;
+        }
+        
+        .premium-quote {
+            font-style: italic;
+            font-size: 22px;
+            padding: 25px;
+            background: rgba(198, 169, 97, 0.05);
+            border-radius: 15px;
+            border-left: 4px solid var(--luxury-gold);
+            margin-top: 40px;
+            position: relative;
+        }
+        
+        .premium-quote::before {
+            content: '"';
+            position: absolute;
+            top: -25px;
+            left: 15px;
+            font-size: 80px;
+            color: var(--luxury-gold);
+            opacity: 0.3;
+            font-family: 'Prata', serif;
+        }
+        
+        /* Premium Services Section */
+        .services-section {
+            padding: 120px 0;
+            background-color: var(--section-bg);
+            position: relative;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+        }
+        
+        .section-tag {
+            font-size: 14px;
+            color: var(--luxury-gold);
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .section-title {
+            font-family: 'Prata', serif;
+            font-size: 48px;
+            color: var(--premium-black);
+            margin-bottom: 20px;
+        }
+        
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--charcoal-gray);
+            max-width: 700px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .service-card {
+            background: var(--pure-white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(198, 169, 97, 0.1);
+            position: relative;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 60px rgba(198, 169, 97, 0.15);
+            border-color: rgba(198, 169, 97, 0.3);
+        }
+        
+        .service-icon {
+            height: 120px;
+            background: var(--gold-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px;
+            color: var(--premium-black);
+        }
+        
+        .service-content {
+            padding: 35px;
+        }
+        
+        .service-content h3 {
+            font-size: 26px;
+            color: var(--premium-black);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .service-content p {
+            color: var(--charcoal-gray);
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-top: 25px;
+        }
+        
+        .service-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+        }
+        
+        .service-features li i {
+            color: var(--luxury-gold);
+            margin-right: 12px;
+            font-size: 14px;
+        }
+        
+        /* Premium About Section */
+        .about-section {
+            padding: 120px 0;
+            background: var(--premium-black);
+            color: var(--pure-white);
+            position: relative;
+        }
+        
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        
+        .about-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .image-placeholder {
+            height: 500px;
+            background: linear-gradient(45deg, var(--charcoal-gray), var(--dark-charcoal));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--luxury-gold);
+            font-size: 20px;
+            position: relative;
+        }
+        
+        .image-placeholder::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 2px solid rgba(198, 169, 97, 0.3);
+            border-radius: 10px;
+        }
+        
+        .about-content h2 {
+            font-family: 'Prata', serif;
+            font-size: 48px;
+            margin-bottom: 30px;
+            color: var(--pure-white);
+        }
+        
+        .about-content h2 span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .about-content p {
+            color: var(--cream-white);
+            margin-bottom: 25px;
+            font-weight: 300;
+            font-size: 18px;
+        }
+        
+        .premium-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            border: 1px solid rgba(198, 169, 97, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .stat-box:hover {
+            border-color: rgba(198, 169, 97, 0.3);
+            background: rgba(198, 169, 97, 0.03);
+        }
+        
+        .stat-number {
+            font-size: 42px;
+            font-weight: 700;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+            font-family: 'Prata', serif;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            color: var(--cream-white);
+            letter-spacing: 1px;
+        }
+        
+        /* Premium Contact Section */
+        .contact-section {
+            padding: 120px 0;
+            background-color: var(--section-bg);
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            background: var(--pure-white);
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+        }
+        
+        .contact-info {
+            padding: 60px;
+            background: linear-gradient(135deg, var(--premium-black), var(--dark-charcoal));
+            color: var(--pure-white);
+            position: relative;
+        }
+        
+        .contact-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--gold-gradient);
+        }
+        
+        .contact-info h2 {
+            font-family: 'Prata', serif;
+            font-size: 42px;
+            margin-bottom: 25px;
+            color: var(--pure-white);
+        }
+        
+        .contact-info h2 span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .contact-details {
+            margin-top: 50px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 35px;
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(198, 169, 97, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: var(--luxury-gold);
+            font-size: 22px;
+            border: 1px solid rgba(198, 169, 97, 0.3);
+        }
+        
+        .contact-text h4 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .contact-text p {
+            color: var(--cream-white);
+            font-weight: 300;
+        }
+        
+        .premium-notice {
+            background: rgba(198, 169, 97, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid var(--luxury-gold);
+            margin-top: 50px;
+        }
+        
+        .premium-form {
+            padding: 60px;
+        }
+        
+        .form-title {
+            font-family: 'Prata', serif;
+            font-size: 36px;
+            color: var(--premium-black);
+            margin-bottom: 10px;
+        }
+        
+        .form-subtitle {
+            color: var(--charcoal-gray);
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: var(--premium-black);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 16px 20px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: var(--pure-white);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--luxury-gold);
+            box-shadow: 0 0 0 3px rgba(198, 169, 97, 0.1);
+        }
+        
+        .premium-btn {
+            background: var(--gold-gradient);
+            color: var(--premium-black);
+            border: none;
+            padding: 18px 45px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 25px rgba(198, 169, 97, 0.2);
+        }
+        
+        .premium-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(198, 169, 97, 0.3);
+        }
+        
+        /* Premium Footer */
+        .premium-footer {
+            background: var(--premium-black);
+            color: var(--pure-white);
+            padding: 80px 0 40px;
+            position: relative;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-logo h3 {
+            font-family: 'Prata', serif;
+            font-size: 30px;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo p {
+            color: var(--cream-white);
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+        
+        .footer-heading {
+            font-size: 20px;
+            color: var(--pure-white);
+            margin-bottom: 25px;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--gold-gradient);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links a {
+            color: var(--cream-white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--luxury-gold);
+            transform: translateX(5px);
+        }
+        
+        .footer-links i {
+            color: var(--luxury-gold);
+            font-size: 12px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cream-white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(198, 169, 97, 0.1);
+        }
+        
+        .social-icon:hover {
+            background: var(--luxury-gold);
+            color: var(--premium-black);
+            transform: translateY(-5px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--cream-white);
+            font-weight: 300;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--luxury-gold);
+            font-size: 28px;
+            cursor: pointer;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .hero-title {
+                font-size: 48px;
+            }
+            
+            .section-title, .about-content h2 {
+                font-size: 40px;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .about-container, .contact-container, .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero-title {
+                font-size: 42px;
+            }
+            
+            .premium-header {
+                padding: 15px 0;
+            }
+            
+            .hero-content, .contact-info, .premium-form {
+                padding: 40px;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .premium-tag {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 36px;
+            }
+            
+            .section-title, .about-content h2 {
+                font-size: 34px;
+            }
+            
+            .hero-description {
+                font-size: 18px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .premium-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .brand-text h1 {
+                font-size: 26px;
+            }
+            
+            .logo-circle {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .logo-circle i {
+                font-size: 26px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 32px;
+            }
+            
+            .section-title, .about-content h2 {
+                font-size: 30px;
+            }
+            
+            .hero-content, .contact-info, .premium-form {
+                padding: 30px 20px;
+            }
+            
+            .service-content {
+                padding: 25px;
+            }
+            
+            .premium-quote {
+                font-size: 18px;
+                padding: 20px;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--premium-black);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold-gradient);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Premium Header -->
+    <header class="premium-header">
+        <div class="container header-container">
+            <div class="logo-section">
+                <div class="logo-circle">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>Navneet AutoMobiles</h1>
+                    <div class="hindi-title">नवनीत ऑटोमोबिल्स</div>
+                </div>
+            </div>
+            
+            <div class="premium-tag">
+                <i class="fas fa-gem"></i> Luxury Automotive Care
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Premium Hero Section -->
+    <section class="premium-hero">
+        <div class="container">
+            <div class="hero-content animate-fade-in-up">
+                <span class="hero-tag">PREMIUM AUTOMOTIVE SERVICES</span>
+                <h1 class="hero-title">Excellence in <span>Automotive</span> Craftsmanship</h1>
+                <p class="hero-description">Navneet AutoMobiles delivers unparalleled automotive care with precision, luxury, and attention to detail that exceeds the expectations of discerning vehicle owners.</p>
+                
+                <div class="premium-quote">
+                    "Where engineering meets elegance. We don't just service vehicles; we curate automotive experiences with uncompromising standards."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Services -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">OUR SERVICES</span>
+                <h2 class="section-title">Premium <span style="background: var(--gold-gradient); -webkit-background-clip: text; background-clip: text; color: transparent;">Automotive</span> Solutions</h2>
+                <p class="section-subtitle">We offer a comprehensive suite of automotive services using cutting-edge technology and genuine components for unparalleled performance.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card animate-fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Precision Repair & Diagnostics</h3>
+                        <p>Advanced diagnostic technology combined with expert craftsmanship for accurate repairs and optimal vehicle performance.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Comprehensive engine diagnostics</li>
+                            <li><i class="fas fa-check"></i> Advanced electrical system repair</li>
+                            <li><i class="fas fa-check"></i> Brake system overhaul & maintenance</li>
+                            <li><i class="fas fa-check"></i> Suspension & steering precision alignment</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Performance Enhancement</h3>
+                        <p>Specialized tuning and enhancement services to elevate your vehicle's performance, responsiveness, and driving dynamics.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Engine tuning & optimization</li>
+                            <li><i class="fas fa-check"></i> Exhaust system performance upgrades</li>
+                            <li><i class="fas fa-check"></i> Suspension tuning for enhanced handling</li>
+                            <li><i class="fas fa-check"></i> ECU remapping & performance software</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Luxury Detailing & Restoration</h3>
+                        <p>Premium detailing services that restore and preserve your vehicle's aesthetic appeal with meticulous attention to detail.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Paint correction & ceramic coating</li>
+                            <li><i class="fas fa-check"></i> Interior deep cleaning & leather care</li>
+                            <li><i class="fas fa-check"></i> Premium waxing & polishing services</li>
+                            <li><i class="fas fa-check"></i> Complete vehicle restoration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image animate-fade-in-up">
+                    <div class="image-placeholder">
+                        <div style="text-align: center;">
+                            <i class="fas fa-car" style="font-size: 60px; margin-bottom: 20px;"></i>
+                            <p>Premium Automotive Facility</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <span class="section-tag">ABOUT US</span>
+                    <h2>Legacy of <span>Automotive</span> Excellence</h2>
+                    <p>For over 15 years, Navneet AutoMobiles has been synonymous with premium automotive care. Our commitment to precision, quality, and customer satisfaction has established us as the preferred choice for discerning vehicle owners.</p>
+                    <p>We combine traditional craftsmanship with cutting-edge technology to deliver services that exceed expectations. Every vehicle that enters our facility receives the meticulous attention to detail it deserves, ensuring performance, reliability, and aesthetic perfection.</p>
+                    
+                    <div class="premium-stats">
+                        <div class="stat-box">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years of Excellence</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Vehicles Serviced</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Customer Satisfaction</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Expert Technicians</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CONTACT US</span>
+                <h2 class="section-title">Schedule Your <span style="background: var(--gold-gradient); -webkit-background-clip: text; background-clip: text; color: transparent;">Premium</span> Service</h2>
+                <p class="section-subtitle">Contact our team of automotive specialists to schedule an appointment or inquire about our premium services.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info animate-fade-in-up">
+                    <h2>Get In <span>Touch</span></h2>
+                    <p>Our team of certified automotive experts is available to assist you with all your vehicle service needs and inquiries.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Service Center</h4>
+                                <p>Navneet AutoMobiles Premium Facility<br>Automotive Excellence District</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Service Inquiries</h4>
+                                <p>+91 98765 43210<br>+91 98765 43211</p>
+                                <p style="margin-top: 5px; font-size: 14px;">Mon-Sat: 8:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Address</h4>
+                                <p>premium@navneetautomobiles.com<br>service@navneetautomobiles.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="premium-notice">
+                        <p><strong>Premium Service Notice:</strong> Our facility is equipped with state-of-the-art diagnostic and service technology. We use only genuine parts and premium components to ensure the highest quality of service for your vehicle.</p>
+                    </div>
+                </div>
+                
+                <div class="premium-form animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <h3 class="form-title">Service Inquiry</h3>
+                    <p class="form-subtitle">Complete the form below and our service advisor will contact you within 24 hours to schedule your premium service appointment.</p>
+                    
+                    <form id="premiumServiceForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" class="form-control" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactNumber">Contact Number *</label>
+                            <input type="tel" id="contactNumber" class="form-control" required placeholder="Enter your contact number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vehicleDetails">Vehicle Details *</label>
+                            <input type="text" id="vehicleDetails" class="form-control" required placeholder="Make, Model, Year (e.g., BMW X5, 2020)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serviceType">Service Required *</label>
+                            <select id="serviceType" class="form-control" required>
+                                <option value="">Select service type</option>
+                                <option value="repair">Repair & Maintenance</option>
+                                <option value="performance">Performance Enhancement</option>
+                                <option value="detailing">Detailing & Restoration</option>
+                                <option value="diagnostics">Comprehensive Diagnostics</option>
+                                <option value="other">Other Services</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serviceDescription">Service Description *</label>
+                            <textarea id="serviceDescription" class="form-control" rows="4" required placeholder="Please describe the service you require"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="premium-btn">
+                            <i class="fas fa-paper-plane"></i> Submit Service Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="premium-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Navneet AutoMobiles</h3>
+                    <p class="hindi-title">नवनीत ऑटोमोबिल्स</p>
+                    <p>Precision automotive care with uncompromising standards. Excellence in every detail since 2005.</p>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Service Packages</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Book Appointment</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Special Offers</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Customer Testimonials</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-wrench"></i> Repair & Maintenance</a></li>
+                        <li><a href="#"><i class="fas fa-tachometer-alt"></i> Performance Tuning</a></li>
+                        <li><a href="#"><i class="fas fa-spa"></i> Luxury Detailing</a></li>
+                        <li><a href="#"><i class="fas fa-diagnoses"></i> Diagnostics</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Warranty Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Automotive Excellence District</a></li>
+                        <li><a href="#"><i class="fas fa-phone-alt"></i> +91 98765 43210</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> premium@navneetautomobiles.com</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 8:00 PM</a></li>
+                        <li><a href="#"><i class="fas fa-certificate"></i> Certified Luxury Service Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2005-<span id="currentYear"></span> Navneet AutoMobiles. All Rights Reserved. | नवनीत ऑटोमोबिल्स</p>
+                <p style="margin-top: 15px; font-size: 14px; color: rgba(255,255,255,0.6);">Crafted with precision for the automotive connoisseur</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Form submission handling
+        document.getElementById('premiumServiceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            alert('Thank you for your premium service inquiry! Our luxury service advisor will contact you within 24 hours to schedule your appointment.');
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            alert('Mobile menu would open here. For this demo, please use the contact form below.');
+        });
+        
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.service-card, .about-image, .about-content, .contact-info, .premium-form').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+  </html>
